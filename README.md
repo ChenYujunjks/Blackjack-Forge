@@ -15,7 +15,7 @@ To play Blackjack Forge, simply visit [insert game URL here]. For developers int
 `git clone https://github.com/ChenYujunjks/Blackjack-Forge.git`
 2. Navigate to the project directory:
 `cd Blackjack-Forge`
-3. Open `index.html` in your browser to start the game.
+3. Open `game.html` in your browser to start the game.
 
 ## How to Play
 - Start a new game by clicking the "Play" button.
