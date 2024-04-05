@@ -1,0 +1,125 @@
+body {
+	height: 100vh;
+	font-family: Garamond, sans-serif;
+	font-size: 1.25em;
+	background-color: #fff;
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+	padding: none;
+}
+
+.home-link {
+	position: absolute;
+	top: 0.25em;
+	left: 0.75em;
+}
+
+.login-status {
+	position: absolute;
+	top: 0.25em;
+	right: 0.75em;
+}
+
+header {
+	position: relative;
+	background-color: #ccddff;
+	margin: 0px;
+	height: 1.5em;
+	padding: 0.25em 1em 0em 1em;
+}
+
+nav > a, nav > a:visited {
+	color: black;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#outer {
+	width: 500px;
+	height: 100vh;
+	background-color: #fff;
+	margin: auto;
+	text-align: left;
+}
+
+div.content {
+	padding: 0em 1em 1em 1em;
+}
+
+.note {
+	color:#888; 
+	padding-top: 1em;
+}
+
+.error {
+	background-color: #eecccc;
+	padding: 0.25em;
+	margin-bottom: 1em;
+	text-align: center;	
+}
+
+.success {
+	background-color: #cceecc;
+	padding: 0.25em;
+}
+
+form div {
+	padding-bottom: 0.5em;
+}
+
+textarea {
+	width: 25em;
+	height: 12em;
+}
+
+form textarea, form input {
+	display: block;
+}
+
+input {
+	border: 1px solid #555;
+	font-size: 1em;
+}
+.card {
+	width: 100px;
+	height: 140px;
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 5px;
+	background-color: #fff;
+	color: #000;
+}
+.hand {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+  
+/*区分自己和庄家的牌 */
+#player-hand, #dealer-hand {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    margin-bottom: 10px; /* Add some space between the hands */
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-top: 20px; /* Add some space at the top */
+}
