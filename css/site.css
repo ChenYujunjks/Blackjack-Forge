@@ -6,7 +6,7 @@ body {
 	text-align: center;
 	margin: auto;
 	margin-top: 0px;
-	padding: none;
+	padding: 0;
 }
 
 .home-link {
@@ -98,17 +98,32 @@ input {
 	margin-bottom: 20px;
 	padding: 10px;
 }
-
+/*更新按钮ui*/
 .button {
-	background-color: #4CAF50;
+	background-color: #4CAF50; /* Fallback color */
+	background-image: linear-gradient(to right, #4CAF50, #45a049); /* Gradient background */
+	border: none;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
+	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
+	border-radius: 8px; /* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+	transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .button:hover {
+	background-image: linear-gradient(to right, #45a049, #4CAF50); /* Change gradient direction */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+	transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .button:active {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow effect */
+	transform: translateY(1px); /* Pressed down effect */
+  }
   
 /*区分自己和庄家的牌 */
 #player-hand, #dealer-hand {
