@@ -135,6 +135,7 @@ function displayHands(showDealerHands = false) {
     // plaer hands
     playerHand.forEach(card => {
         const cardElement = document.createElement('div');
+        cardElement.className = 'card'; // 添加这行来应用 .card 类的样式
         cardElement.textContent = `${card.value} of ${card.suit}`;
         playerHandElement.appendChild(cardElement);
     });
@@ -145,6 +146,7 @@ function displayHands(showDealerHands = false) {
         // show dealer hands
         dealerHand.forEach(card => {
             const cardElement = document.createElement('div');
+            cardElement.className = 'card'; // 添加这行来应用 .card 类的样式
             cardElement.textContent = `${card.value} of ${card.suit}`;
             dealerHandElement.appendChild(cardElement);
         });
@@ -153,6 +155,7 @@ function displayHands(showDealerHands = false) {
         if (dealerHand.length > 0) {
             const cardElement = document.createElement('div');
             const firstCard = dealerHand[0];
+            cardElement.className = 'card'; // 添加这行来应用 .card 类的样式
             cardElement.textContent = `${firstCard.value} of ${firstCard.suit}`;
             dealerHandElement.appendChild(cardElement);
         }
