@@ -175,13 +175,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const startValues = input.value.split(',');
         console.log('Form Submitted. Starting...')
         startGame(startValues);
-
+        document.querySelector("#hit-button").style.display = "inline-block";
+        document.querySelector("#stand-button").style.display = "inline-block";
     });
-    /* 
-    document.querySelector("#deal-button").addEventListener("click", function() {
-        // ? TODO?
-    });
-    */
     document.querySelector("#hit-button").addEventListener("click", function() {
         hit();
 

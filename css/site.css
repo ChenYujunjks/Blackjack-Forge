@@ -98,6 +98,18 @@ input {
 	margin-bottom: 20px;
 	padding: 10px;
 }
+.game-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-top: 20px; /* Add some space at the top */
+}
+.game-controls {
+	display: flex; /* 启用Flexbox */
+	justify-content: center; /* 水平居中对齐Flex项目 */
+	align-items: center; /* 垂直居中对齐Flex项目 */
+	gap: 10px; /* 两个按钮之间的间隙 */
+  }  
 /*更新按钮ui*/
 .button {
 	background-color: #4CAF50; /* Fallback color */
@@ -107,7 +119,7 @@ input {
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
+	display: inline-block; 
 	font-size: 16px;
 	border-radius: 8px; /* Rounded corners */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -124,7 +136,9 @@ input {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow effect */
 	transform: translateY(1px); /* Pressed down effect */
   }
-  
+#hit-button, #stand-button{
+	display: none; /*仅隐藏着两个按钮*/
+}
 /*区分自己和庄家的牌 */
 #player-hand, #dealer-hand {
     display: flex;
@@ -132,9 +146,9 @@ input {
     margin-bottom: 10px; /* Add some space between the hands */
 }
 
-.game-container {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    margin-top: 20px; /* Add some space at the top */
-}
+.start {
+	display: flex;
+	justify-content: center; /* 水平居中 */
+	align-items: center; /* 垂直居中，如果需要 */
+	height: 100vh; /* 取决于你的布局需求 */
+  }
