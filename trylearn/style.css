@@ -1,0 +1,18 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    float: left;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  .main {
+    float: left;
+    width: 760px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
