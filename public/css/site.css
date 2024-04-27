@@ -1,0 +1,191 @@
+body {
+	height: 100vh;
+	font-family: Garamond, sans-serif;
+	font-size: 1.25em;
+	background-color: #fff;
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+	padding: 0;
+}
+
+.home-link {
+	position: absolute;
+	top: 0.25em;
+	left: 0.75em;
+}
+
+.login-status {
+	position: absolute;
+	top: 0.25em;
+	right: 0.75em;
+}
+
+header {
+	position: relative;
+	background-color: #ccddff;
+	margin: 0px;
+	height: 1.5em;
+	padding: 0.25em 1em 0em 1em;
+}
+
+nav > a, nav > a:visited {
+	color: black;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#outer {
+	width: 500px;
+	height: 100vh;
+	background-color: #fff;
+	margin: auto;
+	text-align: left;
+}
+
+div.content {
+	padding: 0em 1em 1em 1em;
+}
+
+.note {
+	color:#888; 
+	padding-top: 1em;
+}
+
+.error {
+	background-color: #eecccc;
+	padding: 0.25em;
+	margin-bottom: 1em;
+	text-align: center;	
+}
+
+.success {
+	background-color: #cceecc;
+	padding: 0.25em;
+}
+
+form div {
+	padding-bottom: 0.5em;
+}
+
+textarea {
+	width: 25em;
+	height: 12em;
+}
+
+form textarea, form input {
+	display: block;
+}
+
+input {
+	border: 1px solid #555;
+	font-size: 1em;
+}
+.card {
+	width: 100px;
+	height: 140px;
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 5px;
+	background-color: #fff;
+	color: #000;
+}
+.card:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	transform: scale(1.05);
+}
+
+.card-image {
+    width: 100px; /* 或者其他适合您布局的尺寸 */
+    margin: 5px;
+}
+
+.hand {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.game-container {
+	margin-top: 20px; /* Add some space at the top */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 20px;
+}
+.game-controls {
+	margin-top: 20px;
+	display: flex; /* 启用Flexbox */
+	justify-content: center; /* 水平居中对齐Flex项目 */
+	align-items: center; /* 垂直居中对齐Flex项目 */
+	gap: 10px; /* 两个按钮之间的间隙 */
+  }  
+
+#game-result {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+#player-hand::before {
+	content: "Player's Hand";
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+#dealer-hand::before {
+	content: "Dealer's Hand";
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+/*更新按钮ui*/
+.button {
+	background-color: #4CAF50; /* Fallback color */
+	background-image: linear-gradient(to right, #4CAF50, #45a049); /* Gradient background */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block; 
+	font-size: 16px;
+	border-radius: 8px; /* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+	transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .button:hover {
+	background-image: linear-gradient(to right, #45a049, #4CAF50); /* Change gradient direction */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+	transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .button:active {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow effect */
+	transform: translateY(1px); /* Pressed down effect */
+  }
+#hit-button, #stand-button{
+	display: none; /*仅隐藏着两个按钮*/
+}
+
+/*区分自己和庄家的牌 */
+#player-hand, #dealer-hand {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    margin-bottom: 10px; /* Add some space between the hands */
+}
+
+.start {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh; 
+  }
